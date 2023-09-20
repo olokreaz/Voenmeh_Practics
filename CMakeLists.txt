@@ -3,5 +3,5 @@ project(TestWork)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(TestWork main.cpp)
+add_executable(TestWork practic_1.c)
 
