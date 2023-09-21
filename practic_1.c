@@ -84,15 +84,15 @@ double Задание5( const double x, const double epsilon )
 {
 	double term      = x; // первый член ряда
 	double sum       = term; // сумма ряда (пока только первый член)
-	double x_squared = x * x;
+	double x_squared = -x * x / 2;
 	int    i;
-	
+
 	for ( i = 1; abs( term ) > epsilon; i ++ )
 		{
-			term *= ( - 1 ) * x_squared / ( 2 * i * ( 2 * i + 1 ) );
+			term *=  x_squared / ( i * ( 2 * i + 1 ) );
 			sum += term;
 		}
-	
+
 	return 2 * sum;
 }
 
