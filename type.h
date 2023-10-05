@@ -52,5 +52,7 @@ typedef int intp;
 typedef unsigned int uintp;
 #endif
 
+typedef int32 * iterator
+
 #endif // else _WIN32
 #endif // TESTWORK_TYPE_H
